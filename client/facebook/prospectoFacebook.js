@@ -185,5 +185,15 @@ angular.module("casserole")
 		$('.collapseTarea').collapse('hide');
 		this.actionTarea = true;
 	};
+	
+	this.etapaVenta = function(etapaVenta){
+	  var etapa = EtapasVenta.findOne(etapaVenta);
+	  if(etapa.nombre != undefined){
+		  return etapa.nombre;
+	  }else{
+		  return "cargando...";
+	  }
+	  
+  }	
 		
 };
