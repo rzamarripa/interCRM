@@ -259,10 +259,17 @@
 															</label>
 														</section>
 													</div>
-								
 												</fieldset>
-												<fieldset>
-								
+												
+												<fieldset>		
+														<section class="col col-6">
+															<label class="input"> <i class="icon-prepend fa fa-user"></i>
+																<input type="text" name="sueldo" ng-model="fa.prospecto.etapaVenta" placeholder="" required="">
+															</label>
+														</section>
+												</fieldset>
+												
+												<fieldset>								
 													<section>
 														<h4>Información adicional</h4>
 														<label class="textarea"> 										
@@ -308,6 +315,11 @@
 													<li>
 														<p class="text-muted">
 															<i class="fa fa-book"></i>&nbsp;&nbsp;<span class="txt-color-darken">{{fa.prospecto.formacionAcademica}}</span>
+														</p>
+													</li>
+													<li>
+														<p class="text-muted">
+															<i class="fa fa-user"></i>&nbsp;&nbsp;<span class="txt-color-darken">{{fa.prospecto.etapaVenta}}</span>
 														</p>
 													</li>
 												</ul>
