@@ -248,27 +248,21 @@
 													</div>
 								
 													<div class="row">
-														<section class="col col-6">
+														<section class="col col-sm-3">
+															<select required ng-model="fa.prospecto.etapaVenta_id" class="form-control" ng-options="etapaVenta._id as etapaVenta.nombre for etapaVenta in fa.etapasVenta" ng-change="fa.cambiarEtapaVenta(fa.prospecto.etapaVenta_id)"></select>
+														</section>
+														<section class="col col-4">
 															<label class="input"> <i class="icon-prepend fa fa-book"></i>
 																<input type="text" name="formacionAcademica" ng-model="fa.prospecto.formacionAcademica" placeholder="Formación Académica" required="">
 															</label>
 														</section>
-														<section class="col col-6">
+														<section class="col col-4">
 															<label class="input"> <i class="icon-prepend fa fa-dollar"></i>
 																<input type="text" name="sueldo" ng-model="fa.prospecto.sueldo" placeholder="Sueldo mensual (libre): 4000, 5000" required="">
 															</label>
 														</section>
 													</div>
 												</fieldset>
-												
-												<fieldset>		
-														<section class="col col-6">
-															<label class="input"> <i class="icon-prepend fa fa-user"></i>
-																<input type="text" name="sueldo" ng-model="fa.prospecto.etapaVenta" placeholder="" required="">
-															</label>
-														</section>
-												</fieldset>
-												
 												<fieldset>								
 													<section>
 														<h4>Información adicional</h4>
